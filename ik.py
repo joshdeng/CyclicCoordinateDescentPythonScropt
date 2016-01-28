@@ -24,7 +24,7 @@ def ccd(goal,chain_base):
     vtail = FBVector3d()
     tail.GetVector(vtail,FBModelTransformationType.kModelTranslation)
     vgoal = FBVector3d()
-    goal.GetVector(vtail,FBModelTransformationType.kModelTranslation)
+    goal.GetVector(vgoal,FBModelTransformationType.kModelTranslation)
     dist = vgoal-vtail
     dist = dist.Length()
 
